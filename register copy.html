@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta - TeenWallet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="rc-page">
+    <header class="rc-brand" aria-label="TeenWallet">
+        <img src="Images/T-Photoroom.png" alt="" width="100" height="100">
+    </header>
+
+    <main class="rc-layout">
+        <section class="rc-form-column" aria-labelledby="rc-title">
+            <div class="rc-heading">
+                <h1 id="rc-title">Crear cuenta</h1>
+                <p>¡Bienvenido! Completa tus datos para empezar</p>
+            </div>
+
+            <form class="rc-card" action="#" method="post">
+                <div class="rc-field">
+                    <label for="nombre">Nombre/s</label>
+                    <input required id="nombre" name="nombre" type="text" placeholder=""
+                        autocomplete="given-name">
+                </div>
+                <div class="rc-field">
+                    <label for="apellido">Apellido/s</label>
+                    <input required id="apellido" name="apellido" type="text" placeholder=""
+                        autocomplete="family-name">
+                </div>
+                <div class="rc-field">
+                    <label for="email">Correo electrónico</label>
+                    <input required id="email" name="email" type="email" placeholder=""
+                        autocomplete="email">
+                </div>
+                <div class="rc-field">
+                    <label for="password">Contraseña</label>
+                    <input required id="password" name="password" type="password" placeholder=""
+                        autocomplete="new-password">
+                </div>
+                <button class="rc-submit" type="submit">Registrarse</button>
+            </form>
+        </section>
+
+        <aside class="rc-aside" aria-label="Información de registro">
+            <img class="rc-illustration" src="Images/register-asset-3.png" alt="Persona usando una notebook">
+            <div class="rc-info">
+                <h2>¡Estás a un paso!</h2>
+                <p>Completa tus datos para crear tu cuenta y empezar a explorar.</p>
+            </div>
+            <div class="rc-accent" aria-hidden="true"></div>
+        </aside>
+    </main>
+</body>
+
+</html>

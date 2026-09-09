@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panel principal de TeenWallet">
+    <title>Inicio | TeenWallet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,700;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="home-page">
+    <header class="home-header">
+        <a class="home-brand" href="home.html" aria-label="TeenWallet, ir al inicio">
+            <img src="Images/T-Photoroom.png" alt="">
+            <span>Teen<span>Wallet</span></span>
+        </a>
+
+        <nav class="home-nav" aria-label="Navegación principal">
+            <a class="is-active" href="home.html">Inicio</a>
+            <a href="#movimientos">Movimientos</a>
+            <a href="#metas">Metas</a>
+        </nav>
+
+        <button class="home-profile" type="button" aria-label="Abrir perfil">
+            <span class="home-avatar" aria-hidden="true"></span>
+            <span class="home-profile-name"></span>
+            <svg aria-hidden="true" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" /></svg>
+        </button>
+    </header>
+
+    <main class="home-main">
+        <section class="home-welcome" aria-labelledby="home-title">
+            <div>
+                <p class="home-eyebrow">Lunes, 8 de septiembre</p>
+                <h1 id="home-title">Hola, -<span aria-hidden="true">👋</span></h1>
+                <p>Así se ve tu dinero hoy.</p>
+            </div>
+            <button class="home-notifications" type="button" aria-label="Ver notificaciones">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" /></svg>
+                <span></span>
+            </button>
+        </section>
+
+        <section class="home-overview" aria-label="Resumen de tu cuenta">
+            <article class="home-balance">
+                <div class="home-card-top">
+                    <span>Saldo disponible</span>
+                    <button type="button" aria-label="Ocultar saldo">
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M2.5 12S6 6.5 12 6.5 21.5 12 21.5 12 18 17.5 12 17.5 2.5 12 2.5 12Z" fill="none" stroke="currentColor" stroke-width="1.8" /><circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8" /></svg>
+                    </button>
+                </div>
+                <p class="home-amount">$ 67.000<span>,00</span></p>
+                <div class="home-balance-footer">
+                    <span><i></i> Este mes</span>
+                    <strong>+ $ 12.500</strong>
+                </div>
+                <div class="home-card-orb home-card-orb-one"></div>
+                <div class="home-card-orb home-card-orb-two"></div>
+            </article>
+
+            <div class="home-summary-cards">
+                <article>
+                    <span class="home-summary-icon income" aria-hidden="true">↓</span>
+                    <div><p>Ingresos</p><strong>$ 32.000</strong></div>
+                </article>
+                <article>
+                    <span class="home-summary-icon expense" aria-hidden="true">↑</span>
+                    <div><p>Gastos</p><strong>$ 19.500</strong></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-actions" aria-labelledby="actions-title">
+            <h2 id="actions-title">¿Qué necesitás hacer?</h2>
+            <div class="home-action-grid">
+                <button type="button"><span class="home-action-icon send">↗</span>Enviar dinero</button>
+                <button type="button"><span class="home-action-icon receive">↓</span>Ingresar dinero</button>
+                <button type="button"><span class="home-action-icon qr">⌘</span>Mostrar mi QR</button>
+                <button type="button"><span class="home-action-icon more">+</span>Más opciones</button>
+            </div>
+        </section>
+
+        <div class="home-content-grid">
+            <section class="home-transactions" id="movimientos" aria-labelledby="transactions-title">
+                <div class="home-section-heading">
+                    <div><h2 id="transactions-title">Últimos movimientos</h2><p>Tu actividad más reciente</p></div>
+                    <a href="#movimientos">Ver todos</a>
+                </div>
+                <ul>
+                    <li><span class="home-transaction-icon food">☕</span><div><strong>Café con amigos</strong><small>Hoy · 10:32</small></div><b class="negative">− $ 2.500</b></li>
+                    <li><span class="home-transaction-icon transfer">↓</span><div><strong>Transferencia de mamá</strong><small>Ayer · 18:16</small></div><b class="positive">+ $ 15.000</b></li>
+                    <li><span class="home-transaction-icon entertainment">◐</span><div><strong>Netflix</strong><small>6 de septiembre</small></div><b class="negative">− $ 4.999</b></li>
+                </ul>
+            </section>
+
+            <aside class="home-goal" id="metas" aria-labelledby="goal-title">
+                <span class="home-goal-tag">Meta activa</span>
+                <div class="home-goal-art" aria-hidden="true">✈</div>
+                <h2 id="goal-title">Viaje de egresados</h2>
+                <p>Te faltan $ 42.000 para alcanzarla.</p>
+                <div class="home-progress" role="progressbar" aria-label="Progreso de la meta" aria-valuemin="0" aria-valuemax="100" aria-valuenow="58"><span></span></div>
+                <div class="home-goal-values"><strong>$ 58.000</strong><span>de $ 100.000</span></div>
+                <button type="button">Aportar a mi meta</button>
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>
